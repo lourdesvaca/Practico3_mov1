@@ -20,8 +20,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             Practico3_mov1Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
+                    Home(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
@@ -31,17 +30,14 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
+fun Home(modifier: Modifier = Modifier) {
+
 }
 
 @Preview(showBackground = true)
 @Composable
-fun GreetingPreview() {
+fun HomePreview() {
     Practico3_mov1Theme {
-        Greeting("Android")
+
     }
 }
